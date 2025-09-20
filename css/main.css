@@ -1,0 +1,271 @@
+
+.bgall{
+    background-image: url("../assets/bg/2.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+.YellowColor{
+    color:#D2921A;
+}
+@media screen and (min-width: 1283px) {/*pc*/
+	.navMin{
+        display: none;
+    }
+    .brshow{
+        padding-top: 8%;
+    }
+}
+@media screen and (max-width: 1284px) {/*cel*/
+    .centrador{
+    text-align: center!important;
+    }
+    .navGrande{
+        display:none;
+    }
+    .brshow{
+        display: none;
+    }
+}
+
+.logoPag{
+    height: 50px;
+}
+
+/* ==========================
+Cards
+============================*/
+.cardP{
+    color: black;
+    padding: 10%;
+}
+.cardImgBorder{
+    border: 3px solid #9f731a;
+     border-radius: 35px;
+     width: 100%;
+}
+
+.cardDimension{
+    width: 190px; 
+    border-radius: 150px 150px 35px 35px;
+    left: 20%;
+}
+@media screen and (min-width: 1283px) {/*pc*/
+	.cardSeparator{
+        height: 50px;
+        width: 50px;
+        color:orange;
+        position:relative;
+        left: 100%;
+        top: 50%;
+    }
+    .cardSeparatorExtra{
+        height: 50px;
+    }
+}
+@media screen and (max-width: 1694px) {/*cel*/
+    .cardSeparator{
+        display:None;
+    }
+    .cardSeparatorExtra{
+        height: 0px;
+    }
+}
+.cardContainerBg{
+    background: rgb(34,44,32);
+    background: linear-gradient(52deg, rgb(24, 53, 61) 0%, rgba(12,26,30,0) 46%, rgba(34,44,32,1) 100%);
+}
+.cardbutton{
+    background-color: #D2921A; border: none; color: white;
+}
+.cardbuttonBlack{
+    background-color: #161824; border: none; color: white;
+}
+
+.colpadding{
+    padding-bottom: 5%;
+   
+}
+.navbardCardbg{
+    background-color: rgba(0, 0, 0, 0.91);
+    padding: 3%;
+    border-radius: 20px;
+    width: 100%!important;
+}
+.readMore{
+    color:white!important;
+    text-decoration: none;
+}
+.readMore:hover{
+    color:white!important;
+}
+/* ==========================
+tickets
+============================*/
+.ticketssTop{
+	border-radius: 20px 20px 0px 0px;
+}
+.ticketss {
+	padding-bottom: 40px;
+	padding-top: 1%;
+	overflow: hidden;
+}
+
+.ticketss .section-title {
+	margin-bottom: 90px;
+}
+
+.ticketss__item {
+	margin-bottom: 45px;
+	background-color:white;
+	border-radius: 20px;
+}
+
+.ticketss__item__pic img {
+	min-width: 100%;
+}
+
+.ticketss__item__text {
+	padding: 25px 30px 35px;
+	text-align: center;
+    color: #111111;
+}
+.ticketss__item__text-left {
+	padding: 0px 5% 5% 5%;
+	text-align: left;
+ 
+}
+.ticketLetter{
+    font-size: 90%!important;
+}
+
+.ticketss__item__text span {
+	font-size: 18px;
+	color: #5c00ce;
+	font-weight: 700;
+}
+
+.ticketss__item__text h4 {
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #111111;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.ticketss__item__text a {
+	display: inline-block;
+	margin-right: 10px;
+    
+}
+
+.ticketss__item__text a:last-child {
+	margin-right: 0;
+}
+
+.ticketss__content{
+	padding-top: 5%;
+}	
+
+
+/* ==========================
+Accordeon
+============================*/
+
+.accordionButton{
+    background-color: #161824;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 2%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.accordeonBody{
+    background-color: #161824;
+    color: white;
+    border-radius: 20px;
+    padding: 7%;
+}
+
+.accordeonPAdding{
+    padding-bottom:15px;
+}
+
+
+.footerLinks{
+    color: #537464;
+    text-decoration: none;
+}
+.footerLinks:hover{
+    color: white;
+}
+
+/*---------------------
+  modal
+-----------------------*/
+.modal-linked{
+    cursor: pointer;
+}
+.modal {
+	display: none; /* Por defecto, estará oculto */
+	position: fixed; /* Posición fija */
+	z-index: 1; /* Se situará por encima de otros elementos de la página*/
+	padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+	left: 0;
+	top: 0;
+	width: 100%; /* Ancho completo */
+	height: 100%; /* Algura completa */
+	overflow: auto; /* Se activará el scroll si es necesario */
+	background-color: rgba(0,0,0,0.8); /* Color negro con opacidad del 50% */
+  }
+  
+  /* Ventana o caja modal */
+  .contenido-modal {
+	border-radius: 20px	;
+	position: relative; /* Relativo con respecto al contenedor -modal- */
+	background-color: white;
+	margin: auto; /* Centrada */
+	-webkit-animation-name: animarsuperior;
+	-webkit-animation-duration: 0.5s;
+	animation-name: animarsuperior;
+	animation-duration: 0.5s
+  }
+
+  @media screen and (min-width: 1283px) {
+	.contenido-modal{padding: 90px;
+		width: 60%;
+	}
+	
+}
+@media screen and (max-width: 1284px) {
+	.contenido-modal{padding: 5px;
+		width: 95%;
+	}
+}
+  
+  /* Animación */
+  @-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+  }
+  
+  @keyframes animarsuperior {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+  }
+  
+  /* Botón cerrar */
+  .close {
+	color: black;
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
